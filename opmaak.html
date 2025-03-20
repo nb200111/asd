@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1,0"> 
+    <title>Nizar's Websites</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/paginas.js" defer></script>
+    <script src="js/mobiel.js" defer></script>
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="menu-toggle" onclick="toggleMenu()">
+          ☰
+      </div>
+      <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="hobby.html">Mijn Hobby's</a></li>
+          <li><a href="gimp.html">Gimp</a></li>
+          <li><a href="game.html">Game</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="opmaak.html">Opmaak</a></li>
+          <li><a href="info.html">info</a></li>
+            <li><a href="login.html">Login</a></li>
+      </ul>
+  </nav>
+      
+      <h1>Opmaak</h1>
+      
+    <div class="container"> 
+      <p>  <strong>Verslag over de HTML- en CSS-opmaak van mijn Website</strong>  
+      <br>  Mijn website bestaat uit negen pagina's, elk met een specifiek doel. De opmaak van deze pagina's is zorgvuldig 
+      ontworpen met behulp van HTML, CSS en in sommige gevallen JavaScript om een visueel aantrekkelijke en gebruiksvriendelijke
+       ervaring te bieden. Hieronder beschrijf ik hoe de HTML-structuur en de bijbehorende CSS-stijlen samenwerken om deze pagina's te creëren.<br>
+      
+       <br> <strong>Homepagina</strong>
+       <br>De homepagina dient als introductie tot mijn website. Hier heb ik een grote koptekst (h1) gebruikt, die met CSS 
+       is opgemaakt door middel van een afgeronde achtergrond (border-radius) en een zachte schaduw (box-shadow). De tekst wordt 
+       gecentreerd weergegeven, en de achtergrondafbeelding wordt dynamisch aangepast met behulp van CSS-animation, zodat de achtergrond subtiel beweegt.<br>
+       
+       <br> <strong>Mijn Hobby's</strong>
+       <br>Op de hobby-pagina heb ik een flexbox-layout gebruikt om 
+       verschillende secties netjes naast elkaar weer te geven. De secties bevatten afbeeldingen en beschrijvingen, 
+       waarbij de afbeeldingen een hover-effect hebben dat ze een lichte vergroting geeft. 
+       Dit heb ik bereikt met CSS-transform en transition.<br>
+       
+       <br> <strong>GIMP-pagina</strong>
+       <br>Deze pagina gaat over GIMP en bevat een galerij van afbeeldingen. De opmaak is 
+       gebaseerd op een grid-systeem waarin de afbeeldingen automatisch schalen afhankelijk van de 
+       schermgrootte. Dit zorgt ervoor dat de lay-out responsief blijft. Voor de schuif functie heb ik super veel moeite gedaan. 
+       Zelfs de meester wist op een gegeven moment niet wat er fout was, maar ik ben toch blijven doorzetten en uiteindelijk is het er prachtig uitgekomen.<br>
+       
+       <br> <strong>Gamepagina</strong> 
+        <br>De gamepagina is interactiever en maakt naast HTML en CSS ook gebruik van JavaScript. 
+        De achtergrondkleur verandert afhankelijk van de acties in de game, en ik heb een canvas-element 
+        toegevoegd waarin de speler kan bewegen. Dit heb ik met JavaScript gedaan door event listeners te 
+        gebruiken voor toetsenbordinvoer en de stijl in CSS aan te passen via JavaScript. <br>
+        
+        <br> <strong>Contactpagina</strong> 
+        <br> de contactpagina wordt een contactformulier weergegeven met invoervelden die 
+        oplichten wanneer ze worden geselecteerd. Dit is gedaan met CSS-focus en een lichte 
+        schaduw om de invoervelden visueel te accentueren. Daarnaast wordt de achtergrond wazig 
+        gemaakt met backdrop-filter om een semi-transparant glas-effect te creëren. <br>
+        
+        <br> <strong>Opmaakpagina</strong> 
+          <br>Deze pagina beschrijft de stijlen en opmaak van mijn website. 
+          Hier worden verschillende CSS-technieken uitgelegd, zoals de toepassing van pseudo-elementen 
+          en de opmaak van knoppen met hover-effecten. De pagina gebruikt een sidebar met fixed position, 
+          zodat deze altijd zichtbaar blijft tijdens het scrollen.<br>
+         
+          <br> <strong>Infopagina</strong>
+            <br>De infopagina bevat lange teksten die 
+            met behulp van text-align: justify netjes uitgelijnd zijn. 
+            Ook heb ik de maximale breedte van paragrafen beperkt om de leesbaarheid te verbeteren. 
+            Verder worden belangrijke woorden benadrukt met CSS-font-weight en kleuraccenten.
+            Het balkje met "voer hier uw inlog gegevens in" staat daar niet voor niets. Zonder dat balkje komt de footer
+             niet mooi uit. Na veel denken ben ik gekomen op een balkje die dus de footer naar beneden duwt.<br>
+           
+            <br> <strong>Loginpagina</strong>
+            <br>De loginpagina maakt gebruik 
+            van JavaScript om invoervelden te valideren.
+             Zo wordt gecontroleerd of een gebruikersnaam en wachtwoord correct 
+             zijn ingevuld voordat toegang wordt verleend tot de school examen-pagina.
+              Met CSS heb ik een schaduw toegevoegd aan het loginformulier, en er is een lichte animatie die het formulier 
+              laat inzoomen wanneer de pagina wordt geladen.<br>
+             
+              <br> <strong>School Examen-pagina</strong>
+              <br>Deze pagina is alleen toegankelijk na inloggen.
+               De inhoud wordt verborgen totdat een geldige login is ingevoerd.
+                De pagina maakt gebruik van een tabel om cijfers overzichtelijk weer te geven.
+                 CSS zorgt ervoor dat de tabel een doorzichtig effect heeft met een subtiele schaduw,
+                  en bij het hoveren over de rijen verandert de achtergrondkleur om de leesbaarheid te verbeteren.<br>
+                 
+                  <br> <strong>Problemen en Oplossingen</strong>
+                  <br>Tijdens het maken van deze website ben ik tegen 
+                  verschillende uitdagingen aangelopen. Een van de problemen was dat de 
+                  achtergrondafbeelding niet goed schaalt op kleinere schermen. Dit heb ik opgelost door
+                   background-size: cover te gebruiken en media queries toe te passen. Een ander probleem was dat 
+                   sommige hover-effecten niet werkten op mobiele apparaten, omdat deze geen muis gebruiken. 
+                   Dit heb ik opgelost door touchstart-events te detecteren in JavaScript.
+                   Door HTML, CSS en JavaScript slim te combineren, heb ik een functionele en visueel aantrekkelijke website gecreëerd.
+</p>
+      </div> 
+      <button id="logout-button">Uitloggen</button>
+      <script>
+       document.getElementById("logout-button").addEventListener("click", () => {
+           localStorage.removeItem("loggedIn"); // Verwijder inlogstatus
+           window.location.href = "login.html"; // Stuur gebruiker terug naar loginpagina
+       });
+       </script>  
+     
+<footer>
+    <p4>Privacy | © 2025 Nizar B</p4>
+      </footer>
+          
+        
+</body> 
+
+</html>

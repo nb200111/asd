@@ -1,0 +1,633 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap');
+
+body {
+    
+  margin: 0;
+  padding: 0;
+  background-color: grey; 
+  font-family: sans-serif;
+}
+
+.menu {
+    background-color: grey;
+      opacity: 0,9;
+ list-style-type: none; 
+    padding: 0; /* Verwijdert de standaard opvulling */
+    margin: 0; /* Verwijdert de standaard marge */
+    display: flex; /* Zet de lijstitems naast elkaar */
+    justify-content: center;
+    align-items: center;
+     height: 80px;
+    background: linear-gradient(to bottom , white, #808080);   
+    }
+  
+ 
+.menu li {
+    margin-right: 30px; /* Voegt ruimte tussen de items */
+}
+    
+    .menu li a {
+    text-decoration: none; /* Verwijdert de onderstreping van links */
+    color: rgb(0, 0, 0); /* Verandert de tekstkleur van de links */
+    padding: 25px; /* Voegt wat ruimte rondom de tekst toe */
+
+font-family: "Sofia Sans Condensed", serif;
+        font-size: 30px;
+
+}
+@keyframes slideIn {
+  from {
+      transform: translateX(100%);
+      opacity: 0;
+  }
+  to {
+      transform: translateX(0);
+      opacity: 1;w
+  }
+}
+
+h1, h2, h3, p  {
+  animation: slideIn 1s ease-out;
+}  
+h1 {
+  border-radius: 75px;
+  background: cadetblue; 
+    font-size: 50px; 
+  padding: 70px;
+  width: 400px;
+  height: 50px;
+text-align: center;
+    margin: 30px auto;
+ 
+}
+
+h2 { 
+padding: 400px;
+  width: 100px;
+  height: 50px;
+    font-size: 100px;
+}
+
+p    {
+    
+    font-size: 25px;
+    text-align: center;
+    margin: 0 auto; 
+    width: 60%;
+    background: darkgrey;
+    border-radius: 200px;
+    padding: 150px;
+     box-shadow: 0px 0px 5px 2px black;   
+}
+p1 {
+  font-size: 25px;
+  text-align: center;
+  margin: 0 auto; 
+  width: 60%;
+  background: darkgrey;
+  border-radius: 200px;
+  padding: 150px;
+   box-shadow: 0px 0px 5px 2px black;   
+}
+nav a:hover {
+     
+    background-color: cadetblue;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.3), 
+                -6px -6px 12px rgba(255, 255, 255, 0.2);
+}
+
+    
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:200');
+
+body  {
+  background-attachment: fixed;
+    background-image: url('https://static.pexels.com/photos/414171/pexels-photo-414171.jpeg'); 
+  background-size:cover;
+    
+
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+
+        -webkit-animation-direction: alternate;
+        animation-direction: alternate;  
+    overflow-x: hidden;
+}
+
+@-webkit-keyframes slidein {
+from {background-position: top; background-size:3000px; }
+to {background-position: -100px 0px;background-size:2750px;}
+}
+
+@keyframes slidein {
+from {background-position: top;background-size:3000px; }
+to {background-position: -100px 0px;background-size:2750px;}
+ 
+}
+
+
+
+.center
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(75, 75, 250, 0.3);
+  border-radius: 3px;
+}
+.center h1{
+  text-align:center;
+  color:white;
+  font-family: 'Source Code Pro', monospace;
+  text-transform:uppercase;
+}
+    
+#main-holder {
+  width: 40%;
+  height: 80;
+  margin: auto; 
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  background: transparent;
+  border-radius: 70px;
+  box-shadow: 0px 0px 5px 2px grey;
+    backdrop-filter: blur(20px);
+    margin-top: 80px;
+    
+}
+
+#login-error-msg-holder {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+#login-error-msg {
+  width: 23%;
+  text-align: center;
+  margin: 0;
+  padding: 5px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #8a0000;
+  border: 1px solid #8a0000;
+  background-color: #e58f8f;
+  opacity: 0;
+}
+
+#error-msg-second-line {
+  display: block;
+}
+
+#login-form {
+  align-self: flex-start;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.login-form-field::placeholder {
+  color: #3a3a3a;
+}
+
+.login-form-field {
+  border: none;
+  border-bottom: 1px solid #3a3a3a;
+  margin-bottom: 50px;
+  border-radius: 3px;
+  outline: none;
+  padding-bottom: 20px;
+    width: 300px;
+    height: 40px;
+    margin: 20px;
+
+}
+
+#login-form-submit {
+  width: 150%;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  background-color: #3a3a3a;
+  cursor: pointer;
+  outline: none;
+    margin-bottom: 40px;
+}
+
+h3 { 
+ 
+    font-size: 70px; 
+  padding: 50px;
+  width: 200px;
+  height: 50px;
+text-align: center;
+    margin: 30px auto;
+}
+        
+
+
+table.schoolcijfers {
+    width: 60%;
+    margin-left: 570px;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      position: fixed;
+    width: 800px;
+    height: 500px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgb(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     
+}
+
+
+
+
+table.schoolcijfers th {
+    padding: 12px;
+    text-align: left;
+}
+
+
+table.schoolcijfers td {
+    font-size: 23px;
+    color: black;
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+
+table.schoolcijfers tr:hover {
+    background-color: #f1f1f1;
+}
+/* Achtergrond styling alleen voor de contactpagina */
+    contact-container {
+         display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+    background: linear-gradient(to bottom right, #dde1e7, #f7f9fc);
+
+}
+    
+
+/* De contact-box in het midden van de pagina */
+.contact-box {
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparant */
+    padding: 100px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.2), 
+                -8px -8px 16px rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px); /* Glas-effect */
+    width: 40%;
+    margin-left: 26%;
+    margin-top: 70px;
+    margin-bottom: 122px;
+}
+
+
+/* Titel boven de knoppen */
+.contact-box h4 {
+    font-size: 70px;
+    color: #333;
+    margin-bottom: 30px;
+    margin-top: 10px;
+  
+}
+
+/* Stijl van de k noppen */
+.contact-box button {
+    width: 8%;
+    font-size: 25px;
+    padding: 15px;
+    margin: 10px 7px;
+    border: none;
+    border-radius: 10px;
+    background: #2d2d2d;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), 
+                -4px -4px 8px rgba(255, 255, 255, 0.1);
+}
+
+ 
+.contact-box button:hover {
+    background: #f0eded;
+    transform: translateY(-3px);
+    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.3), 
+                -6px -6px 12px rgba(255, 255, 255, 0.2);
+}
+
+/* Klik-effect */
+.contact-box button:active {
+    transform: scale(0.95);
+}
+
+.contact-box button img {
+  width: 30px; /* Maakt de afbeelding 30px breed (je kunt dit aanpassen naar wens) */
+  height: 20px; /* Maakt de afbeelding 30px hoog (zorgt voor een vierkant formaat) */
+  object-fit: contain; /* Zorgt ervoor dat de afbeelding netjes binnen de opgegeven breedte en hoogte past */
+}
+  
+#board {
+    background-color: black;
+    border-top: 5px solid skyblue;
+    border-left: 5px solid skyblue;
+    border-right: 5px solid skyblue;
+    border-bottom: 5px solid skyblue;
+    border-radius: 10px;
+    margin-left: 36%;
+    width: 30%;
+ 
+}
+.menu {
+  background: linear-gradient(to bottom, white, gray);
+  position: relative;
+  padding-bottom: 20px;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 95% 100%, 85% 90%, 75% 100%, 65% 90%, 55% 100%, 45% 90%, 35% 100%, 25% 90%, 15% 100%, 5% 90%, 0% 100%);
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  background: linear-gradient(to bottom, white, gray);
+  padding: 10px;
+  position: relative; /* Niet meer vastgeplakt aan de onderkant */
+  margin-top: 50px; /* Zorgt voor ruimte tussen content en footer */
+}
+
+.p4 {
+  opacity: 0.6; /* Iets beter leesbaar dan 0.3 */
+  font-size: 14px;
+  color: black;
+}
+
+p5 {
+width: 40%;
+text-align: center;
+background: linear-gradient(to bottom, 
+#616c72, gray);
+color: rgb(0, 0, 0);
+font-size: 40px;
+margin: 570px;
+justify-content: center;
+border-radius: 15px;
+padding: 5px;
+margin-bottom: 0px;
+margin-top: 42px;
+display: block;  
+}
+
+.gimp-title {
+  margin: 100px auto 40px auto;
+  text-align: center;
+}
+.gimp-container {
+  display: flex;
+  justify-content: center;
+    flex-direction: row;
+     flex-wrap: wrap;
+}
+.gimp-item {
+  margin: 10px;
+  text-align: center;
+}
+.gimp-container img {
+  height: 360px;
+}
+
+
+
+footer1 /* Footer van alleen mijn schoolexamen pagina */{
+  width: 100%;
+  text-align: center;
+  background: linear-gradient(to bottom, white, gray);
+  padding: 10px;
+  position: absolute; /* Niet meer vastgeplakt aan de onderkant */
+  margin-top: 50px; /* Zorgt voor ruimte tussen content en footer */
+  margin-bottom: 0px;
+  margin: -20px;
+  justify-content: center;
+  margin-top: 28.2%;
+}
+
+p {
+  text-align: justify; /* Uitvullen voor nette uitlijning */
+  max-width: 800px; /* Beperkt de breedte voor leesbaarheid */
+  margin: auto;
+}
+
+#logout-button {
+color: rgb(34, 34, 34);
+padding: 17px;
+border-radius: 25px;
+background: linear-gradient(to bottom, rgb(253, 252, 252), rgb(75, 75, 75));
+ position: fixed;
+top: 30px;
+right: 190px;
+cursor: pointer;  
+transition: transform 0.3s ease, background-color 0.3s ease;  
+}
+ 
+ 
+ 
+#logout-button:hover {
+  transform: scale(1.3);  
+}
+
+ 
+.menu-toggle {
+  font-size: 40px;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  display: none; 
+  position: fixed;
+  top: 30px;
+  right: 90px;
+}
+@media screen and (max-width: 600px) {
+  .menu-toggle {
+      display: block;
+  }
+
+  .menu {
+      display: none;
+       flex-direction: column;
+      width: 50%;
+      background: #444;
+      position: fixed;
+      top: 100px;
+      right: 0;
+      height: 60vh;
+      border-radius: 25px;
+      clip-path: none;
+      z-index: 1000;
+  }
+
+  .menu li {
+    text-align: center;
+      padding: 10px 0;
+  }
+
+  .menu.show {
+      display: flex;
+  }
+  footer {
+    display: none; 
+  }
+  body {
+    width: 100%; 
+}
+h1, h2, h3, h4 {
+  max-width: 100%;
+}
+.contact-box {
+  flex-direction: column; /* Zet de knoppen onder elkaar in plaats van naast elkaar */
+  align-items: center; /* Centreer de knoppen */
+}
+
+.contact-box button {
+  width: 100%; /* Zorgt ervoor dat de knoppen de volledige breedte innemen */
+  margin: 5px 0; /* Voeg wat ruimte toe tussen de knoppen */
+}
+
+.contact-box img {
+  width: 30px; /* Kleinere afbeeldingen op kleinere schermen */
+  height: 30px;
+}
+
+.contact-box h4 {
+  text-align: center; /* Centreer de titel */
+  margin-bottom: 15px; /* Voeg ruimte toe onder de titel */
+  font-size: 28px; /* Pas het lettertype aan voor kleinere schermen */
+}
+
+h3 {
+  font-size: 24px; /* Verklein de lettergrootte voor kleinere schermen */
+  padding: 20px;
+  width: 80%; /* Maak de titel smaller voor kleinere schermen */
+  height: auto;
+  text-align: center;
+  margin: 20px auto;
+}
+
+/* Foutmelding */
+#login-error-msg-holder {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#login-error-msg {
+  width: 80%; /* Maak de foutmelding breder op kleinere schermen */
+  font-size: 14px;
+  padding: 10px;
+  font-weight: bold;
+  color: #8a0000;
+  border: 1px solid #8a0000;
+  background-color: #e58f8f;
+  opacity: 0;
+}
+
+/* Login form */
+#login-form {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  width: 80%; /* Formulier smaller maken */
+  margin: 0 auto;
+}
+
+.login-form-field {
+  width: 100%; /* Zorg ervoor dat de velden de volledige breedte innemen */
+  height: 40px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #3a3a3a;
+  border-radius: 5px;
+  outline: none;
+}
+
+#login-form-submit {
+  width: 100%; /* Maak de knop breder op kleinere schermen */
+  padding: 12px;
+  background-color: #3a3a3a;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  margin-bottom: 20px;
+}
+
+/* Extra kleine schermen aanpassen */
+#main-holder {
+  width: 90%; /* Zorg ervoor dat de container smaller is op kleine schermen */
+  height: auto;
+  margin-top: 100px;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 5px 2px grey;
+  backdrop-filter: blur(10px);
+}
+
+ 
+p5 {
+  display: none;
+}
+#board{
+  justify-content: center;
+  width: 50%;
+  padding: 10%;
+  position: fixed;
+  margin: auto;
+  left: 80px;
+}
+
+#logout-button {
+  position: fixed;
+  left: 10px;
+  width: 18%;
+}
+
+table.schoolcijfers{
+  max-width: 90%;
+  justify-content: center;
+  position: fixed;
+  right: 30px;
+  
+}
+footer1 {
+  display: none;
+}
+
+nav a:hover {
+  background-color: rgb(39, 39, 39);
+ border-radius: 0px;
+ box-shadow: none;
+}
+}

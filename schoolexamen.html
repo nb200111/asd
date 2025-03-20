@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1,0"> 
+    <title>Nizar's Websites</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/mobiel.js" defer></script>
+    <script src="js/paginas.js" defer></script>
+  </head>
+
+  <body>
+    <script>
+      if (localStorage.getItem("loggedIn") !== "true") {
+          window.location.href = "login.html"; // Stuur gebruiker terug als hij niet ingelogd is
+      }
+      </script>
+
+ 
+<nav class="navbar">
+  <div class="menu-toggle" onclick="toggleMenu()">
+      ☰
+  </div>
+  <ul class="menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="hobby.html">Mijn Hobby's</a></li>
+      <li><a href="gimp.html">Gimp</a></li>
+      <li><a href="game.html">Game</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="opmaak.html">Opmaak</a></li>
+      <li><a href="info.html">info</a></li>
+        <li><a href="login.html">Login</a></li>
+  </ul>
+</nav>
+        
+       
+      <h1>Schoolexamen</h1>
+      
+        <table class="schoolcijfers">
+       
+        <tbody>
+            <tr>
+                <td>Wiskunde</td>
+                <td>7,5</td>
+                <td>Prima!</td>
+            </tr>
+            <tr>
+                <td>Nederlands</td>
+                <td>6,5</td>
+                <td>Goed gewerkt!</td>
+            </tr>
+            <tr>
+                <td>Engels</td>
+                <td>7,0</td>
+                <td>Mooi cijfer!</td>
+            </tr>
+            <tr>
+                <td>Maatschappijleer</td>
+                <td>7,9</td>
+                <td>Uitstekend!</td>
+            </tr>
+            <tr>
+                <td>Natuurkunde</td>
+                <td>5,4</td>
+                <td>Nog aan de slag</td>
+            </tr>
+            <tr>
+              <td>Scheikunde</td>
+              <td>7,0</td>
+              <td>Uitstekend!</td>
+          </tr>
+          <tr>
+            <td>Duits</td>
+            <td>6,3</td>
+            <td>Prima!</td>
+        </tr>
+        <tr>
+          <td>Engels</td>
+          <td>5,5</td>
+          <td>Nog geen cijfers</td>
+      </tr>
+      
+        </tbody>
+    </table>
+    <button id="logout-button">Uitloggen</button>
+     <script>
+      document.getElementById("logout-button").addEventListener("click", () => {
+          localStorage.removeItem("loggedIn"); // Verwijder inlogstatus
+          window.location.href = "login.html"; // Stuur gebruiker terug naar loginpagina
+      });
+      </script>  
+  
+
+
+<footer1>
+  <p4>Privacy | © 2025 Nizar B</p4>
+</footer1>
+  </body> 
+   
+</html> 

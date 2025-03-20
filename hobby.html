@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1,0"> 
+    <title>Nizar's Websites</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/paginas.js" defer></script>
+    <script src="js/mobiel.js" defer></script>
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="menu-toggle" onclick="toggleMenu()">
+          ☰
+      </div>
+      <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="hobby.html">Mijn Hobby's</a></li>
+          <li><a href="gimp.html">Gimp</a></li>
+          <li><a href="game.html">Game</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="opmaak.html">Opmaak</a></li>
+          <li><a href="info.html">info</a></li>
+            <li><a href="login.html">Login</a></li>
+      </ul>
+  </nav>
+      
+      <h1>Mijn Hobby's</h1>
+      
+      <p>Sporten is voor mij de perfecte manier om actief te blijven en plezier te hebben. Ik hou van zwemmen, kickboksen en voetbal – drie sporten die me op verschillende manieren uitdagen en energie geven.<br>
+
+<br>🏊 Zwemmen geeft me een gevoel van vrijheid. Zodra ik in het water duik, vergeet ik alles om me heen en focus ik op mijn techniek en snelheid. Het is ontspannend, maar tegelijkertijd een geweldige full-body workout.<br>
+
+<br>🥊 Kickboksen is mijn manier om kracht en discipline te combineren. Het houdt me scherp, helpt me mijn grenzen te verleggen en geeft een enorme adrenalineboost. Bovendien is het een geweldige uitlaatklep na een lange dag.<br>
+
+<br>⚽ Voetbal is pure passie. Het teamgevoel, de snelheid van het spel en de spanning van een wedstrijd zorgen ervoor dat ik altijd weer op het veld wil staan. Niets voelt beter dan een perfecte pass of een mooie goal!<br>
+
+<br>Deze hobby’s houden me fit, gemotiveerd en vol energie. Of ik nu in het water ben, in de ring sta of op het veld ren – ik ben altijd in beweging!
+      </p>
+      <button id="logout-button">Uitloggen</button>
+      <script>
+       document.getElementById("logout-button").addEventListener("click", () => {
+           localStorage.removeItem("loggedIn"); // Verwijder inlogstatus
+           window.location.href = "login.html"; // Stuur gebruiker terug naar loginpagina
+       });
+       </script> 
+    
+<footer>
+    <p4>Privacy | © 2025 Nizar B</p4>
+      </footer>
+          
+  </body> 
+
+</html>

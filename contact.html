@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1,0"> 
+
+    <title>Nizar's Websites</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/paginas.js" defer></script>
+    <script src="js/mobiel.js" defer></script>
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="menu-toggle" onclick="toggleMenu()">
+          ☰
+      </div>
+      <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="hobby.html">Mijn Hobby's</a></li>
+          <li><a href="gimp.html">Gimp</a></li>
+          <li><a href="game.html">Game</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="opmaak.html">Opmaak</a></li>
+          <li><a href="info.html">info</a></li>
+            <li><a href="login.html">Login</a></li>
+      </ul>
+  </nav>
+       
+      <h1>Contact</h1>
+      
+      
+     
+<body>
+   
+<div class="contact-container">
+    <div class="contact-box">
+        <h4>Contacteer Mij</h4>
+        <button onclick="window.open('https://mail.google.com/mail/?view=cm&fs=1&to=nizar.bouhbouh@cartesius.espritscholen.nl')">
+          <img src="images/gmail.png" alt="Gmail">  
+        </button>
+        <button onclick="window.open('tel:0638529365')">
+          <img src="images/telefoon.png" alt="Telefoon">  
+        </button>
+        <button onclick="window.open('https://www.snapchat.com/add/nb_200111', '_blank')">
+          <img src="images/snapchat.png" alt="Snapchat"> 
+        </button>
+        
+      <button onclick="window.open('https://www.instagram.com/cristiano/')">
+        <img src="images/instagram.png" alt="Instagram">
+    </button>
+   
+    <button onclick="window.open('https://www.facebook.com/profile.php?id=100089802450279')">
+      <img src="images/facebook.png" alt="Facebook">
+  </button>
+  <button onclick="window.open('https://x.com/Barthogen_')">
+    <img src="images/x.png" alt="x">
+</button>
+    <button onclick="window.open('https://wa.me/31638529368')">
+    <img src="images/whatsapp.png" alt="x">
+</button>
+    </div>
+</div>
+
+   
+</body>
+<button id="logout-button">Uitloggen</button>
+<script>
+ document.getElementById("logout-button").addEventListener("click", () => {
+     localStorage.removeItem("loggedIn"); // Verwijder inlogstatus
+     window.location.href = "login.html"; // Stuur gebruiker terug naar loginpagina
+ });
+ </script> 
+ 
+<footer>
+    <p4>Privacy | © 2025 Nizar B</p4>
+      </footer>
+  </body> 
+
+</html>
